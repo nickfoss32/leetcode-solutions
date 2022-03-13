@@ -1,0 +1,42 @@
+{
+   "version": 3,
+   "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 23,
+      "patch": 0
+   },
+   "configurePresets": [
+      {
+         "name": "default",
+         "generator": "Unix Makefiles",
+         "binaryDir": "${sourceDir}/build/${presetName}",
+         "hidden": true
+      },
+      {
+         "name": "relwithdebinfo",
+         "inherits": "default",
+         "hidden": true,
+         "cacheVariables": {
+            "CMAKE_BUILD_TYPE": {
+               "type": "STRING",
+               "value": "RelWithDebInfo"
+            }
+         }
+      },
+      {
+         "name": "release",
+         "inherits": "default",
+         "hidden": true,
+         "cacheVariables": {
+            "CMAKE_BUILD_TYPE": {
+               "type": "STRING",
+               "value": "Release"
+            }
+         }
+      },
+      {
+         "name": "x86_64-apple-darwin",
+         "inherits": "relwithdebinfo"
+      }
+   ]
+}
