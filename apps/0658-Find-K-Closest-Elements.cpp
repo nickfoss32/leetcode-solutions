@@ -180,7 +180,7 @@ int main(int argc, char** argv) {
         std::make_tuple(std::vector<int> {1,2,3,4,5}, 4, 10),
         std::make_tuple(std::vector<int> {1,2,2,4,5}, 4, 3),
         std::make_tuple(std::vector<int> {1,1,1,10,10,10}, 1, 9),
-        std::make_tuple(std::vector<int> {0,1,1,1,2,3,6,7,8,9}, 9, 4),
+        std::make_tuple(std::vector<int> {0,1,1,1,2,3,6,7,8,9}, 9, 4)
     };
 
     //run solution on all test vectors
