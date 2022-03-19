@@ -15,7 +15,6 @@
       {
          "name": "relwithdebinfo",
          "inherits": "default",
-         "hidden": true,
          "cacheVariables": {
             "CMAKE_BUILD_TYPE": {
                "type": "STRING",
@@ -26,17 +25,12 @@
       {
          "name": "release",
          "inherits": "default",
-         "hidden": true,
          "cacheVariables": {
             "CMAKE_BUILD_TYPE": {
                "type": "STRING",
                "value": "Release"
             }
          }
-      },
-      {
-         "name": "x86_64-apple-darwin",
-         "inherits": "relwithdebinfo"
       }
    ]
 }

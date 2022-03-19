@@ -8,4 +8,4 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug" OR CMAKE_BUILD_TYPE STREQUAL "RelWithDebIn
 	add_compile_definitions(DEBUG)
 endif()
 
-add_executable(K-Closest-Elements apps/K-Closest-Elements.cpp)
+add_executable(658-Find-K-Closest-Elements.cpp apps/658-Find-K-Closest-Elements.cpp)

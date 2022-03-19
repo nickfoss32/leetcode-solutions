@@ -52,14 +52,14 @@ while [[ $# -gt 0 ]]; do
    esac
 done
 
-declare -a targets=("x86_64-apple-darwin")
+declare -a targets=("relwithdebinfo")
 
 for target in "${targets[@]}"; do
    ## Create build directories ##
    mkdir -p $REPO_ROOT/build/$target
 
    ## Configure and generate build environment with CMake ##
-   cmake --preset=$target -S $REPO_ROOT -B $REPO_ROOT/build/$target -DCMAKE_BUILD_TYPE=RelWithDebInfo
+   cmake --preset=$target -S $REPO_ROOT -B $REPO_ROOT/build/$target
 
    ## build ##
    cmake --build $REPO_ROOT/build/$target -- VERBOSE=$VERBOSE
