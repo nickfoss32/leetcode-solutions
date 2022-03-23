@@ -13,6 +13,16 @@
          "hidden": true
       },
       {
+         "name": "debug",
+         "inherits": "default",
+         "cacheVariables": {
+            "CMAKE_BUILD_TYPE": {
+               "type": "STRING",
+               "value": "Debug"
+            }
+         }
+      },
+      {
          "name": "relwithdebinfo",
          "inherits": "default",
          "cacheVariables": {

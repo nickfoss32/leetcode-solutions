@@ -52,7 +52,7 @@ while [[ $# -gt 0 ]]; do
    esac
 done
 
-declare -a targets=("relwithdebinfo")
+declare -a targets=("debug")
 
 for target in "${targets[@]}"; do
    ## Create build directories ##

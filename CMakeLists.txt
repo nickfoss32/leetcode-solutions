@@ -9,4 +9,5 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug" OR CMAKE_BUILD_TYPE STREQUAL "RelWithDebIn
 endif()
 
 add_executable(0001-Two-Sum apps/0001-Two-Sum.cpp)
+add_executable(0002-Add-Two-Numbers apps/0002-Add-Two-Numbers.cpp)
 add_executable(0658-Find-K-Closest-Elements apps/0658-Find-K-Closest-Elements.cpp)

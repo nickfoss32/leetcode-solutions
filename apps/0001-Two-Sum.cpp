@@ -30,7 +30,7 @@ public:
 int main(int argc, char** argv) {
     Solution solution;
 
-    // all test vectors are a tuple of a vector of numbers (the sorted array), an integer k value, and an integer x value
+    // all test vectors are a tuple of a vector of numbers (the input array), and an integer target value
     std::vector<std::tuple<std::vector<int>, int>> inputVectors = {
         std::make_tuple(std::vector<int> {2,7,11,15}, 9)
     };
