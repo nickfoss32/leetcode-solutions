@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <tuple>
-#include <stack>
-#include <cmath>
 
 
 struct ListNode {
