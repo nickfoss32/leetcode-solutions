@@ -13,7 +13,7 @@
          "hidden": true
       },
       {
-         "name": "debug",
+         "name": "Debug",
          "inherits": "default",
          "cacheVariables": {
             "CMAKE_BUILD_TYPE": {
@@ -23,17 +23,7 @@
          }
       },
       {
-         "name": "relwithdebinfo",
-         "inherits": "default",
-         "cacheVariables": {
-            "CMAKE_BUILD_TYPE": {
-               "type": "STRING",
-               "value": "RelWithDebInfo"
-            }
-         }
-      },
-      {
-         "name": "release",
+         "name": "Release",
          "inherits": "default",
          "cacheVariables": {
             "CMAKE_BUILD_TYPE": {
