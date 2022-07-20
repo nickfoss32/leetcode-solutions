@@ -8,22 +8,15 @@ REPO_ROOT=`git rev-parse --show-toplevel`
 ################################################################################
 Help()
 {
-	echo "Script for building leetcode solutions."
+   echo "Script for building leetcode solutions."
    echo
    echo "Syntax: ./build.sh [-v|-h]"
    echo "Options:"
-	echo "-v|--verbose Enables verbose output."
+   echo "-v|--verbose Enables verbose output."
    echo "-h|--help	Prints this usage."
    echo
 }
 
-################################################################################
-# echo_cmd                                                                     #
-################################################################################
-# echo_cmd()
-# {
-#    if [[ -v VERBOSE ]]; then printf '%s\n' "${*}"; "${@}"; else "${@}"; fi; echo
-# }
 
 ################################################################################
 ################################################################################
@@ -38,7 +31,7 @@ while [[ $# -gt 0 ]]; do
 
    case $key in
       -v|--verbose)
-         VERBOSE=1
+         set -x
          shift
          ;;
       -h|--help)
