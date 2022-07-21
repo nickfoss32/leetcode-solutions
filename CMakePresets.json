@@ -10,6 +10,16 @@
          "name": "default",
          "generator": "Unix Makefiles",
          "binaryDir": "${sourceDir}/build/${presetName}",
+         "cacheVariables": {
+            "CMAKE_CXX_COMPILER": {
+               "type": "STRING",
+               "value": "g++"
+            },
+            "CMAKE_C_COMPILER": {
+               "type": "STRING",
+               "value": "gcc"
+            }
+         },
          "hidden": true
       },
       {
